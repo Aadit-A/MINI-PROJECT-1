@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Currency Converter</title>
+    <title>Crypto Converter</title>
 </head>
 <body>
 
-    <h1>Crypto Currency Converter Dashboard</h1>
+    <h1>Crypto Currency Converter</h1>
 
     <p id="welcome"></p>
 
-    <button id="logoutBtn">Logout</button>
+    <hr>
+
+    <label>Amount</label>
+    <br>
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <br><br>
+
+    <label>Select Cryptocurrency</label>
+    <br>
+
+    <select id="fromSelect">
+
+    </select>
+
+    <br><br>
+
+    <label>Select Currency</label>
+    <br>
+
+    <select id="toSelect">
+
+    </select>
+
+    <br><br>
+
+    <button id="convertBtn">
+        Convert
+    </button>
+
+    <button id="saveBtn">
+        Save Favorite Pair
+    </button>
+
+    <hr>
+
+    <h3>Conversion Result</h3>
+
+    <p id="result"></p>
+
+    <hr>
+
+    <h3>Favorite Pairs</h3>
+
+    <ul id="favorites"></ul>
+
+    <hr>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
 
     <script src="auth.js"></script>
     <script src="dashboard.js"></script>
